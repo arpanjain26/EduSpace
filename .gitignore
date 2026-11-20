@@ -1,0 +1,25 @@
+# Python environments and generated files
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.egg-info/
+
+# Frontend dependencies and build output
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Local environment files and logs
+**/.env.local
+**/.env.*.local
+*.log
+npm-debug.log*
+
+# Editor and OS files
+.idea/
+.DS_Store
+Thumbs.db

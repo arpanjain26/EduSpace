@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+    background: linear-gradient(180deg, #0B0D1A 0%, #05060F 100%);
+    color: #EAEAF5;
+    min-height: 100vh;
+  }
+  body { @apply font-sans min-h-screen; }
+  h1, h2, h3 { @apply font-display tracking-tight; }
+  /* A clear outline when you move around with the Tab key (accessibility) */
+  :focus-visible { @apply outline-none ring-2 ring-nebula-500 ring-offset-2 ring-offset-space-900 rounded-md; }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-md rounded-2xl;
+    background: rgba(18, 22, 43, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px -12px rgba(108, 92, 231, 0.25);
+  }
+  .container-eduspace { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-cyan-500; }
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #6C5CE7, #00D4FF);
+  }
+  /* Section divider: faint orbit ring */
+  .orbit-divider {
+    @apply relative my-16;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.3), rgba(0, 212, 255, 0.2), transparent);
+  }
+  .orbit-divider::after {
+    content: "";
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-2 w-2 rounded-full;
+    background: #00D4FF;
+    box-shadow: 0 0 8px 2px rgba(0, 212, 255, 0.4);
+  }
+}
+
+/* Respect people who ask their computer for less animation */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

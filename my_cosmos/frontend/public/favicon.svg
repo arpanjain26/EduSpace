@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#12162B"/>
+      <stop offset="100%" stop-color="#0B0D1A"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="24" fill="url(#bg)"/>
+  <!-- Orbit rings -->
+  <ellipse cx="24" cy="24" rx="18" ry="10" fill="none" stroke="rgba(108,92,231,0.25)" stroke-width="0.8" transform="rotate(-15 24 24)"/>
+  <ellipse cx="24" cy="24" rx="14" ry="7" fill="none" stroke="rgba(0,212,255,0.2)" stroke-width="0.6" transform="rotate(20 24 24)"/>
+  <!-- Star / sun center -->
+  <circle cx="24" cy="24" r="6" fill="url(#g)"/>
+  <circle cx="24" cy="24" r="4" fill="#FFD166" opacity="0.8"/>
+  <!-- Planet dots -->
+  <circle cx="38" cy="20" r="2.5" fill="#FF6BCB"/>
+  <circle cx="12" cy="28" r="2" fill="#00D4FF"/>
+  <circle cx="30" cy="34" r="1.5" fill="#FFD166"/>
+  <!-- Stars -->
+  <circle cx="8" cy="8" r="0.8" fill="#EAEAF5" opacity="0.7"/>
+  <circle cx="40" cy="10" r="0.6" fill="#EAEAF5" opacity="0.5"/>
+  <circle cx="6" cy="38" r="0.5" fill="#00D4FF" opacity="0.6"/>
+  <circle cx="42" cy="40" r="0.7" fill="#EAEAF5" opacity="0.4"/>
+  <!-- E letter hint -->
+  <text x="24" y="27" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="10" fill="white" opacity="0.9">E</text>
+</svg>
